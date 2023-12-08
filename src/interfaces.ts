@@ -18,7 +18,9 @@ export interface UserInfo {
   username: string;
   passwordHashed: string;
   email: string;
-  avatar: object;
+  avatar: {
+    secureUrl: string
+  };
   followers: [];
   following: [];
   createdAt: Date;

@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Rethink Sans', system-ui, sans-serif;
 
 
   color-scheme: light dark;
@@ -10,6 +10,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1270px;
+  margin: 0 auto;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('/public/Rethink_Sans/RethinkSans-VariableFont_wght.ttf') format('ttf');
+  font-weight: 400;
+}
