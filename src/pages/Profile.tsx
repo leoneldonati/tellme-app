@@ -1,5 +1,6 @@
 import Description from "../components/Description";
 import ProfilePhoto from "../components/ProfilePhoto";
+import UserPosts from "../components/UserPosts";
 
 export default function Profile () {
 
@@ -8,8 +9,9 @@ export default function Profile () {
 
         <ProfilePhoto className="rounded-[20%] w-[400px] col-span-1 row-span-2 shadow-md shadow-slate-300" />
 
-        <Description />
+        <Description className=""/>
 
+        <UserPosts />
     </section>
   )
 }

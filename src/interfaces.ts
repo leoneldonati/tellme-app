@@ -7,9 +7,12 @@ export interface AuthState {
 }
 
 export interface PostsState {
-  posts: [],
+  posts: []
+  userPosts: []
   errors: null | object
-  getPosts: (quantity: number) => Promise<void | any>
+  getPosts: (quantity: number) => Promise<void | unknown>
+  getUserPosts: () => Promise<void>
+  addPost: (payload: FormData) => Promise<void>
 }
 
 export interface UserInfo {

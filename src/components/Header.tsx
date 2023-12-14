@@ -17,7 +17,7 @@ export default function Header() {
       </div>
 
       <div>
-        <Link to="/profile">
+        <Link to="/profile" title="Go to your profile">
           <Avatar />
         </Link>
       </div>
